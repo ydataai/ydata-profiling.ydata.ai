@@ -3,7 +3,13 @@
 <head>
     <title>YData | Profiling Docs</title>
     <script type="text/javascript">
-        window.location.hostname = 'docs.profiling.ydata.ai';
+        switch (window.location.pathname) {
+            case "/docs/master/pages/getting_started/installation.html":
+                window.location.href = "https://docs.profiling.ydata.ai/latest/getting-started/installation";
+                break;
+            default:
+                window.location.href = "https://docs.profiling.ydata.ai";
+        }
     </script>
 </head>
 </html>
